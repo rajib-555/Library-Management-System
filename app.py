@@ -7,7 +7,7 @@ from datetime import date
 # ---------- DB CONFIG ----------
 DB_HOST = "localhost"
 DB_USER = "root"
-DB_PASSWORD = "root"   # <-- replace
+DB_PASSWORD = "PASSWORD"   # <-- replace
 DB_NAME = "Bookstore"
 # --------------------------------
 
@@ -165,3 +165,4 @@ elif choice == "All Books":
     st.header("All Books")
     df = load_data("SELECT * FROM Books")
     st.dataframe(df)
+
